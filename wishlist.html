@@ -1,0 +1,397 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your wishlist — COMMON THREAD</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="catalog.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body id="top" data-page="wishlist">
+    <div class="announcement">
+      <p>Free UK delivery on orders over £50</p>
+      <a href="category.html"
+        >Explore the new season <span aria-hidden="true">↗</span></a
+      >
+    </div>
+    <header class="site-header">
+      <div class="header-main">
+        <button
+          class="icon-button menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg></button
+        ><a class="wordmark" href="index.html" aria-label="Common Thread home"
+          >COMMON<span>THREAD</span></a
+        >
+        <form class="search" role="search" action="category.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 5 5" /></svg
+          ><input
+            type="search"
+            name="q"
+            placeholder="Search essentials"
+            aria-label="Search products"
+          /><button class="search-clear" type="reset" aria-label="Clear search">
+            ×
+          </button>
+        </form>
+        <div class="header-actions">
+          <a
+            class="icon-button account-button"
+            href="login.html"
+            aria-label="Sign in"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M4.5 20c.4-4 3.2-6 7.5-6s7.1 2 7.5 6" /></svg></a
+          ><a
+            class="icon-button wishlist-link"
+            href="wishlist.html"
+            aria-label="Wishlist"
+            style="text-decoration: none; font-size: 20px"
+            >♡<span class="wishlist-count" aria-live="polite">0</span></a
+          ><a
+            class="icon-button bag-button"
+            href="cart.html"
+            aria-label="Shopping bag"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 8h14l1 13H4L5 8Z" />
+              <path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg
+            ><span class="bag-count" aria-live="polite">0</span></a
+          >
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="category.html">New in</a
+        ><a href="category.html?category=Women">Women</a
+        ><a href="category.html?category=Men">Men</a
+        ><a href="category.html">Clothing</a
+        ><a href="index.html#edit">The everyday edit</a
+        ><a href="about.html">Our approach</a><a href="faq.html">FAQ</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section
+        class="inner-page section-wrap listing-page"
+        data-wishlist-content
+      >
+        <p class="eyebrow">Saved for another day</p>
+        <h1>Your wishlist.</h1>
+        <div class="product-grid" data-wishlist-grid hidden>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="0"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=700&q=80"
+                  alt="Relaxed cotton shirt in a soft neutral tone" /></a
+              ><span class="product-tag">Just in</span
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="0"
+                data-remove-favourite="0"
+                aria-label="Remove Relaxed cotton shirt from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product.html">Relaxed cotton shirt</a>
+                </p>
+                <p class="product-category">Shirts &amp; tops</p>
+              </div>
+              <p class="product-price">£39.00</p>
+              <a class="add-button" href="product.html">View item</a>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="1"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product-1.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+                  alt="Classic blue denim jeans" /></a
+              ><span class="product-tag">Bestseller</span
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="1"
+                data-remove-favourite="1"
+                aria-label="Remove Everyday straight jean from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-1.html">Everyday straight jean</a>
+                </p>
+                <p class="product-category">Denim</p>
+              </div>
+              <p class="product-price">£55.00</p>
+              <a class="add-button" href="product-1.html">View item</a>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="2"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product-2.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80"
+                  alt="Soft, lightweight knitwear" /></a
+              ><span class="product-tag">Just in</span
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="2"
+                data-remove-favourite="2"
+                aria-label="Remove Soft knit cardigan from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-2.html">Soft knit cardigan</a>
+                </p>
+                <p class="product-category">Knitwear</p>
+              </div>
+              <p class="product-price">£49.00</p>
+              <a class="add-button" href="product-2.html">View item</a>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="3"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product-3.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80"
+                  alt="Lightweight overshirt in a natural colour" /></a
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="3"
+                data-remove-favourite="3"
+                aria-label="Remove Easy linen overshirt from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-3.html">Easy linen overshirt</a>
+                </p>
+                <p class="product-category">Shirts &amp; tops</p>
+              </div>
+              <p class="product-price">£45.00</p>
+              <a class="add-button" href="product-3.html">View item</a>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="4"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product-4.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&w=700&q=80"
+                  alt="Comfortable everyday sweatshirt" /></a
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="4"
+                data-remove-favourite="4"
+                aria-label="Remove Weekend crew sweatshirt from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-4.html">Weekend crew sweatshirt</a>
+                </p>
+                <p class="product-category">Sweats</p>
+              </div>
+              <p class="product-price">£35.00</p>
+              <a class="add-button" href="product-4.html">View item</a>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="5"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product-5.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                  alt="Simple cotton T-shirt" /></a
+              ><span class="product-tag">Everyday essential</span
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="5"
+                data-remove-favourite="5"
+                aria-label="Remove Washed cotton tee from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-5.html">Washed cotton tee</a>
+                </p>
+                <p class="product-category">T-shirts</p>
+              </div>
+              <p class="product-price">£22.00</p>
+              <a class="add-button" href="product-5.html">View item</a>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="6"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product-6.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?auto=format&fit=crop&w=700&q=80"
+                  alt="A versatile light jacket" /></a
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="6"
+                data-remove-favourite="6"
+                aria-label="Remove Light layer jacket from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-6.html">Light layer jacket</a>
+                </p>
+                <p class="product-category">Outerwear</p>
+              </div>
+              <p class="product-price">£68.00</p>
+              <a class="add-button" href="product-6.html">View item</a>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-wishlist-product
+            data-product-id="7"
+            hidden
+          >
+            <div class="product-image-wrap">
+              <a href="product-7.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=700&q=80"
+                  alt="Relaxed-fit everyday trousers" /></a
+              ><button
+                class="favourite-button is-favourite"
+                type="button"
+                data-toggle-favourite="7"
+                data-remove-favourite="7"
+                aria-label="Remove Relaxed cotton trouser from wishlist"
+                aria-pressed="true"
+              >
+                ♥
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-7.html">Relaxed cotton trouser</a>
+                </p>
+                <p class="product-category">Trousers</p>
+              </div>
+              <p class="product-price">£48.00</p>
+              <a class="add-button" href="product-7.html">View item</a>
+            </div>
+          </article>
+        </div>
+        <div class="empty-state" data-wishlist-empty>
+          <p>Your wishlist is waiting for a little inspiration.</p>
+          <a class="button button-dark" href="category.html"
+            >Explore clothing <span>→</span></a
+          >
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="index.html"
+          >COMMON<span>THREAD</span></a
+        >
+        <p>Good clothes. Long days.<br />More ways to wear them.</p>
+        <form class="newsletter">
+          <label for="footer-email">A note from us, now and then.</label>
+          <div class="newsletter-input">
+            <input
+              id="footer-email"
+              type="email"
+              placeholder="Your email address"
+              required
+            /><button type="submit" aria-label="Subscribe">→</button>
+          </div>
+        </form>
+        <nav class="footer-pages" aria-label="More information">
+          <a href="about.html">About us</a><a href="contact.html">Contact</a
+          ><a href="faq.html">FAQ</a><a href="register.html">Create account</a
+          ><a href="login.html">Sign in</a><a href="cart.html">Shopping bag</a
+          ><a href="wishlist.html">Wishlist</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Common Thread</span
+        ><span>Made for everyday, wherever you are.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

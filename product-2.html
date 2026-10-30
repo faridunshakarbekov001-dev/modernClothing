@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soft knit cardigan — COMMON THREAD</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="catalog.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body id="top" data-page="product">
+    <div class="announcement">
+      <p>Free UK delivery on orders over £50</p>
+      <a href="category.html"
+        >Explore the new season <span aria-hidden="true">↗</span></a
+      >
+    </div>
+    <header class="site-header">
+      <div class="header-main">
+        <button
+          class="icon-button menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg></button
+        ><a class="wordmark" href="index.html" aria-label="Common Thread home"
+          >COMMON<span>THREAD</span></a
+        >
+        <form class="search" role="search" action="category.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 5 5" /></svg
+          ><input
+            type="search"
+            name="q"
+            placeholder="Search essentials"
+            aria-label="Search products"
+          /><button class="search-clear" type="reset" aria-label="Clear search">
+            ×
+          </button>
+        </form>
+        <div class="header-actions">
+          <a
+            class="icon-button account-button"
+            href="login.html"
+            aria-label="Sign in"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M4.5 20c.4-4 3.2-6 7.5-6s7.1 2 7.5 6" /></svg></a
+          ><a
+            class="icon-button wishlist-link"
+            href="wishlist.html"
+            aria-label="Wishlist"
+            style="text-decoration: none; font-size: 20px"
+            >♡<span class="wishlist-count" aria-live="polite">0</span></a
+          ><a
+            class="icon-button bag-button"
+            href="cart.html"
+            aria-label="Shopping bag"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 8h14l1 13H4L5 8Z" />
+              <path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg
+            ><span class="bag-count" aria-live="polite">0</span></a
+          >
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="category.html">New in</a
+        ><a href="category.html?category=Women">Women</a
+        ><a href="category.html?category=Men">Men</a
+        ><a href="category.html">Clothing</a
+        ><a href="index.html#edit">The everyday edit</a
+        ><a href="about.html">Our approach</a><a href="faq.html">FAQ</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="product-detail section-wrap">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="index.html">Home</a><span>/</span
+          ><a href="category.html?category=Women">Women</a><span>/</span
+          ><span>Soft knit cardigan</span>
+        </nav>
+        <div class="detail-layout">
+          <div class="detail-image">
+            <img
+              src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=1200&q=80"
+              alt="Soft, lightweight knitwear"
+            />
+          </div>
+          <div class="detail-copy">
+            <p class="eyebrow">Women / Knitwear</p>
+            <h1>Soft knit cardigan</h1>
+            <p class="detail-price">£49.00</p>
+            <p class="detail-description">
+              An easy, considered layer designed to find its way into your
+              everyday rotation. Wear it your way, season after season.
+            </p>
+            <label class="field-label" for="product-size">Select a size</label
+            ><select class="form-control" id="product-size">
+              <option value="">Choose size</option>
+              <option>XS</option>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+              <option>XL</option></select
+            ><button
+              class="button form-submit"
+              type="button"
+              data-detail-add="2"
+            >
+              Add to bag — £49.00</button
+            ><button
+              class="detail-wishlist"
+              type="button"
+              data-toggle-favourite="2"
+            >
+              ♡ Save to wishlist
+            </button>
+            <p class="detail-delivery">
+              Free UK delivery on orders over £50. Easy returns within 30 days.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="index.html"
+          >COMMON<span>THREAD</span></a
+        >
+        <p>Good clothes. Long days.<br />More ways to wear them.</p>
+        <form class="newsletter">
+          <label for="footer-email">A note from us, now and then.</label>
+          <div class="newsletter-input">
+            <input
+              id="footer-email"
+              type="email"
+              placeholder="Your email address"
+              required
+            /><button type="submit" aria-label="Subscribe">→</button>
+          </div>
+        </form>
+        <nav class="footer-pages" aria-label="More information">
+          <a href="about.html">About us</a><a href="contact.html">Contact</a
+          ><a href="faq.html">FAQ</a><a href="register.html">Create account</a
+          ><a href="login.html">Sign in</a><a href="cart.html">Shopping bag</a
+          ><a href="wishlist.html">Wishlist</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Common Thread</span
+        ><span>Made for everyday, wherever you are.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

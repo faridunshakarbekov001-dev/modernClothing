@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothing — COMMON THREAD</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="catalog.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body id="top" data-page="category">
+    <div class="announcement">
+      <p>Free UK delivery on orders over £50</p>
+      <a href="#new-in"
+        >Explore the new season <span aria-hidden="true">↗</span></a
+      >
+    </div>
+    <header class="site-header">
+      <div class="header-main">
+        <button
+          class="icon-button menu-toggle"
+          type="button"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3 7h18M3 12h18M3 17h18" />
+          </svg>
+        </button>
+        <a class="wordmark" href="index.html" aria-label="Common Thread home"
+          >COMMON<span>THREAD</span></a
+        >
+        <form class="search" role="search" action="category.html">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.8" />
+            <path d="m16 16 5 5" /></svg
+          ><input
+            type="search"
+            name="q"
+            placeholder="Search essentials"
+            aria-label="Search products"
+          /><button class="search-clear" type="reset" aria-label="Clear search">
+            ×
+          </button>
+        </form>
+        <div class="header-actions">
+          <a
+            class="icon-button account-button"
+            href="login.html"
+            aria-label="Sign in"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M4.5 20c.4-4 3.2-6 7.5-6s7.1 2 7.5 6" /></svg
+          ></a>
+          <a
+            class="icon-button wishlist-link"
+            href="wishlist.html"
+            aria-label="Wishlist"
+            style="text-decoration: none; font-size: 20px"
+            >♡<span class="wishlist-count" aria-live="polite">0</span></a
+          >
+          <a
+            class="icon-button bag-button"
+            href="cart.html"
+            aria-label="Shopping bag"
+            ><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M5 8h14l1 13H4L5 8Z" />
+              <path d="M9 9V6a3 3 0 0 1 6 0v3" /></svg
+            ><span class="bag-count" aria-live="polite">0</span></a
+          >
+        </div>
+      </div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="category.html">New in</a
+        ><a href="category.html?category=Women">Women</a
+        ><a href="category.html?category=Men">Men</a
+        ><a href="category.html">Clothing</a
+        ><a href="index.html#edit">The everyday edit</a
+        ><a href="about.html">Our approach</a><a href="faq.html">FAQ</a
+        ><a href="contact.html">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <section class="inner-page section-wrap listing-page" id="new-in">
+        <p class="eyebrow">Find your everyday</p>
+        <h1>All clothing</h1>
+        <div class="category-filters">
+          <a class="selected" data-category-link="All" href="category.html"
+            >View all</a
+          ><a data-category-link="Women" href="category.html?category=Women"
+            >Women</a
+          ><a data-category-link="Men" href="category.html?category=Men">Men</a>
+        </div>
+        <div class="product-tools">
+          <div
+            class="filter-tabs"
+            role="group"
+            aria-label="Filter products by collection"
+          >
+            <button
+              class="filter-tab is-active"
+              type="button"
+              data-filter="All"
+              aria-pressed="true"
+            >
+              View all</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-filter="Women"
+              aria-pressed="false"
+            >
+              Women</button
+            ><button
+              class="filter-tab"
+              type="button"
+              data-filter="Men"
+              aria-pressed="false"
+            >
+              Men
+            </button>
+          </div>
+          <label class="sort-control"
+            ><span class="sr-only">Sort products</span
+            ><select aria-label="Sort products">
+              <option value="featured">Featured</option>
+              <option value="price-low">Price: low to high</option>
+              <option value="price-high">Price: high to low</option>
+            </select></label
+          >
+        </div>
+        <p class="search-status" aria-live="polite"></p>
+        <div class="product-grid" aria-live="polite">
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="0"
+            data-category="Women"
+            data-name="relaxed cotton shirt"
+            data-type="shirts & tops"
+            data-price="39"
+          >
+            <div class="product-image-wrap">
+              <a href="product.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=700&q=80"
+                  alt="Relaxed cotton shirt in a soft neutral tone"
+                  loading="lazy" /></a
+              ><span class="product-tag">Just in</span
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="0"
+                aria-label="Add Relaxed cotton shirt to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product.html">Relaxed cotton shirt</a>
+                </p>
+                <p class="product-category">Shirts &amp; tops</p>
+              </div>
+              <p class="product-price">£39.00</p>
+              <button class="add-button" type="button" data-add="0">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="1"
+            data-category="Men"
+            data-name="everyday straight jean"
+            data-type="denim"
+            data-price="55"
+          >
+            <div class="product-image-wrap">
+              <a href="product-1.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+                  alt="Classic blue denim jeans"
+                  loading="lazy" /></a
+              ><span class="product-tag">Bestseller</span
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="1"
+                aria-label="Add Everyday straight jean to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-1.html">Everyday straight jean</a>
+                </p>
+                <p class="product-category">Denim</p>
+              </div>
+              <p class="product-price">£55.00</p>
+              <button class="add-button" type="button" data-add="1">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="2"
+            data-category="Women"
+            data-name="soft knit cardigan"
+            data-type="knitwear"
+            data-price="49"
+          >
+            <div class="product-image-wrap">
+              <a href="product-2.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=700&q=80"
+                  alt="Soft, lightweight knitwear"
+                  loading="lazy" /></a
+              ><span class="product-tag">Just in</span
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="2"
+                aria-label="Add Soft knit cardigan to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-2.html">Soft knit cardigan</a>
+                </p>
+                <p class="product-category">Knitwear</p>
+              </div>
+              <p class="product-price">£49.00</p>
+              <button class="add-button" type="button" data-add="2">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="3"
+            data-category="Men"
+            data-name="easy linen overshirt"
+            data-type="shirts & tops"
+            data-price="45"
+          >
+            <div class="product-image-wrap">
+              <a href="product-3.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=80"
+                  alt="Lightweight overshirt in a natural colour"
+                  loading="lazy" /></a
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="3"
+                aria-label="Add Easy linen overshirt to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-3.html">Easy linen overshirt</a>
+                </p>
+                <p class="product-category">Shirts &amp; tops</p>
+              </div>
+              <p class="product-price">£45.00</p>
+              <button class="add-button" type="button" data-add="3">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="4"
+            data-category="Women"
+            data-name="weekend crew sweatshirt"
+            data-type="sweats"
+            data-price="35"
+          >
+            <div class="product-image-wrap">
+              <a href="product-4.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1554568218-0f1715e72254?auto=format&fit=crop&w=700&q=80"
+                  alt="Comfortable everyday sweatshirt"
+                  loading="lazy" /></a
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="4"
+                aria-label="Add Weekend crew sweatshirt to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-4.html">Weekend crew sweatshirt</a>
+                </p>
+                <p class="product-category">Sweats</p>
+              </div>
+              <p class="product-price">£35.00</p>
+              <button class="add-button" type="button" data-add="4">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="5"
+            data-category="Men"
+            data-name="washed cotton tee"
+            data-type="t-shirts"
+            data-price="22"
+          >
+            <div class="product-image-wrap">
+              <a href="product-5.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                  alt="Simple cotton T-shirt"
+                  loading="lazy" /></a
+              ><span class="product-tag">Everyday essential</span
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="5"
+                aria-label="Add Washed cotton tee to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-5.html">Washed cotton tee</a>
+                </p>
+                <p class="product-category">T-shirts</p>
+              </div>
+              <p class="product-price">£22.00</p>
+              <button class="add-button" type="button" data-add="5">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="6"
+            data-category="Women"
+            data-name="light layer jacket"
+            data-type="outerwear"
+            data-price="68"
+          >
+            <div class="product-image-wrap">
+              <a href="product-6.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1548126032-079a0fb0099d?auto=format&fit=crop&w=700&q=80"
+                  alt="A versatile light jacket"
+                  loading="lazy" /></a
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="6"
+                aria-label="Add Light layer jacket to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-6.html">Light layer jacket</a>
+                </p>
+                <p class="product-category">Outerwear</p>
+              </div>
+              <p class="product-price">£68.00</p>
+              <button class="add-button" type="button" data-add="6">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+          <article
+            class="product-card"
+            data-product-card
+            data-product-id="7"
+            data-category="Men"
+            data-name="relaxed cotton trouser"
+            data-type="trousers"
+            data-price="48"
+          >
+            <div class="product-image-wrap">
+              <a href="product-7.html"
+                ><img
+                  src="https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=700&q=80"
+                  alt="Relaxed-fit everyday trousers"
+                  loading="lazy" /></a
+              ><button
+                class="favourite-button"
+                type="button"
+                data-toggle-favourite="7"
+                aria-label="Add Relaxed cotton trouser to wishlist"
+                aria-pressed="false"
+              >
+                ♡
+              </button>
+            </div>
+            <div class="product-info">
+              <div>
+                <p class="product-name">
+                  <a href="product-7.html">Relaxed cotton trouser</a>
+                </p>
+                <p class="product-category">Trousers</p>
+              </div>
+              <p class="product-price">£48.00</p>
+              <button class="add-button" type="button" data-add="7">
+                Add to bag +
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="wordmark footer-wordmark" href="index.html"
+          >COMMON<span>THREAD</span></a
+        >
+        <p>Good clothes. Long days.<br />More ways to wear them.</p>
+        <form class="newsletter">
+          <label for="footer-email">A note from us, now and then.</label>
+          <div class="newsletter-input">
+            <input
+              id="footer-email"
+              type="email"
+              placeholder="Your email address"
+              required
+            /><button type="submit" aria-label="Subscribe">→</button>
+          </div>
+        </form>
+        <nav class="footer-pages" aria-label="More information">
+          <a href="about.html">About us</a><a href="contact.html">Contact</a
+          ><a href="faq.html">FAQ</a><a href="register.html">Create account</a
+          ><a href="login.html">Sign in</a><a href="cart.html">Shopping bag</a
+          ><a href="wishlist.html">Wishlist</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Common Thread</span
+        ><span>Made for everyday, wherever you are.</span
+        ><a href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+    <div class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
